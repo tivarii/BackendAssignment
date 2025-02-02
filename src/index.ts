@@ -3,7 +3,7 @@ dotenv.config();
 import cors from 'cors';
 import express, { Application } from 'express';
 import faqRoute from "./routes/faq.route"
-const app: Application = express();
+export const app: Application = express();
 const PORT: number = Number(process.env.PORT) || 5000;
 
 
@@ -18,7 +18,3 @@ app.use(express.json());
 // Routes
 app.use('/api/faqs', faqRoute);
 
-// Start server
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
