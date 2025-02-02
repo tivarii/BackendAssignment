@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node dist/run.js",
+    "start": "node dist/server.js",
     "dev": "ts-node-dev --respawn src/app.ts",
     "build": "tsc",
     "lint": "eslint . --ext .ts",
@@ -18,6 +18,9 @@
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.0",
     "@vitalets/google-translate-api": "^9.2.1",
+    "lint": "eslint .",
+    "format": "npx prettier . --write",
+    "lint:fix": "eslint . --fixx",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
